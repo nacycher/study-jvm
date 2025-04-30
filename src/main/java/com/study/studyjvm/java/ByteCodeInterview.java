@@ -40,4 +40,39 @@ public class ByteCodeInterview {
         System.out.println(k);
     }
 
+    /**
+     * 包装类对象的缓存问题
+     */
+    @Test
+    public void test5() {
+        // 查字节码发现是Integer.valueOf()方法
+        // 存在缓存[-128,127]，如果在这个区间，就直接返回数组缓存中的对象
+        Integer i = 10;
+        Integer j = 10;
+        // true
+        System.out.println(i == j);
+
+        Integer i1 = 128;
+        Integer j1 = 128;
+        // false
+        System.out.println(i1 == j1);
+
+        // 查字节码发现是Boolean.valueOf()方法
+        // Boolean类型的valueOf()方法，返回的是一个Boolean类型的常量
+        Boolean b1 = true;
+        Boolean b2 = true;
+        // true
+        System.out.println(b1 == b2);
+    }
+
+
+    @Test
+    public void test6() {
+        String s1 = new String("hello") + new String("world");
+        s1.intern();
+        String s2 = "helloworld";
+        // false, ture(s1.intern()方法返回的是常量池中的对象)
+        System.out.println(s1 == s2);
+    }
+
 }

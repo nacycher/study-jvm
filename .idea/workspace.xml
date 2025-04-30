@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f03f1124-f8b3-4ae0-a3bf-97e05605c53c" name="Changes" comment="[add]01-jvm概述">
+    <list default="true" id="f03f1124-f8b3-4ae0-a3bf-97e05605c53c" name="Changes" comment="[add]05-字节码常见面试题">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/notes/01jvm概述.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/notes/01-jvm概述.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/studyjvm/java/ByteCodeInterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/studyjvm/java/ByteCodeInterview.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +52,8 @@
     "JUnit.ByteCodeInterview.test2.executor": "Run",
     "JUnit.ByteCodeInterview.test3.executor": "Run",
     "JUnit.ByteCodeInterview.test4.executor": "Run",
+    "JUnit.ByteCodeInterview.test5.executor": "Run",
+    "JUnit.ByteCodeInterview.test6.executor": "Run",
     "Maven.study-jvm [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -85,7 +83,7 @@
       <recent name="C:\Users\秋秋\IdeaProjects\study-jvm\src\main\resources\notes\" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ByteCodeInterview.test4">
+  <component name="RunManager" selected="JUnit.ByteCodeInterview.test6">
     <configuration name="ByteCodeInterview.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="study-jvm" />
       <extension name="coverage">
@@ -134,6 +132,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ByteCodeInterview.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="study-jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.studyjvm.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.studyjvm.java" />
+      <option name="MAIN_CLASS_NAME" value="com.study.studyjvm.java.ByteCodeInterview" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ByteCodeInterview.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="study-jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.studyjvm.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.studyjvm.java" />
+      <option name="MAIN_CLASS_NAME" value="com.study.studyjvm.java.ByteCodeInterview" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudyJvmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="study-jvm" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.studyjvm.StudyJvmApplication" />
@@ -143,6 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ByteCodeInterview.test6" />
+        <item itemvalue="JUnit.ByteCodeInterview.test5" />
         <item itemvalue="JUnit.ByteCodeInterview.test4" />
         <item itemvalue="JUnit.ByteCodeInterview.test3" />
         <item itemvalue="JUnit.ByteCodeInterview.test2" />
@@ -173,7 +205,7 @@
       <workItem from="1744363897724" duration="2000" />
       <workItem from="1744609610967" duration="1623000" />
       <workItem from="1745573368884" duration="2404000" />
-      <workItem from="1745995135435" duration="5315000" />
+      <workItem from="1745995135435" duration="7225000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -199,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744276083532</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[add]05-字节码常见面试题">
+      <option name="closed" value="true" />
+      <created>1746001840735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746001840735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +248,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
     <MESSAGE value="[add]01-jvm概述" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]01-jvm概述" />
+    <MESSAGE value="[add]05-字节码常见面试题" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]05-字节码常见面试题" />
   </component>
 </project>
