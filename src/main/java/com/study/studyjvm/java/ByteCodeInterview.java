@@ -66,6 +66,8 @@ public class ByteCodeInterview {
     }
 
 
+    // jdk1.6中，字符串常量池在方法区中
+    // jdk1.7以后，字符串常量池在堆中
     @Test
     public void test6() {
         String s1 = new String("hello") + new String("world");
