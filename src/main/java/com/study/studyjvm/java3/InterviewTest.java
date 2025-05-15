@@ -4,6 +4,10 @@ import org.junit.Test;
 
 public class InterviewTest {
 
+//    private static int testMember = 1;
+//    private final int j = 10;
+    private final int j = 10;
+
     @Test
     public void test() {
         Integer x = 128;
