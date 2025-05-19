@@ -12,8 +12,6 @@ public class ClassLoaderTest {
         System.out.println(systemClassLoader);
         System.out.println(extendClassLoader);
         System.out.println(bootstrapClassLoader);
-
-
     }
 }
 
