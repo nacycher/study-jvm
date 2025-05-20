@@ -64,10 +64,10 @@ public class UserDefineClassLoader extends ClassLoader{
 
     public static void main(String[] args) {
         try {
-            UserDefineClassLoader loader1 = new UserDefineClassLoader("C:\\Users\\秋秋\\IdeaProjects\\study-jvm\\target\\classes");
+            UserDefineClassLoader loader1 = new UserDefineClassLoader("C:\\Users\\Administrator\\IdeaProjects\\study-jvm\\target\\classes");
             Class userClass1 = loader1.findClass("com.study.studyjvm.eneity.User");
 
-            UserDefineClassLoader loader2 = new UserDefineClassLoader("C:\\Users\\秋秋\\IdeaProjects\\study-jvm\\target\\classes");
+            UserDefineClassLoader loader2 = new UserDefineClassLoader("C:\\Users\\Administrator\\IdeaProjects\\study-jvm\\target\\classes");
             Class userClass2 = loader2.findClass("com.study.studyjvm.eneity.User");
 
             // userClass1 和 userClass2 是两个不同的类，因为它们是由不同的类加载器加载的
