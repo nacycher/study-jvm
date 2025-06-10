@@ -13,6 +13,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>study-jvm</name>
     <description>study-jvm</description>
+
+    <modules>
+        <module>jvm-truning</module>
+    </modules>
+    <packaging>pom</packaging>
+
     <url/>
     <licenses>
         <license/>
